@@ -1,0 +1,36 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #f7f7f7; /* added a light gray background color */
+}
+
+.item{
+  width: 30%;
+  background-color: #fff; /* added a white background color to each card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle box shadow */
+  border-radius: 10px; /* added a border radius to each card */
+  padding: 20px; /* added some padding to each card */
+}
+
+.item img{
+  width: 100%;
+  height: auto; /* changed to auto to maintain the image's aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* added to ensure the image is not distorted */
+}
+
+.item h3{
+  color: #333; /* added a dark gray text color to the headings */
+}
+
+.item p{
+  color: #666; /* added a medium gray text color to the paragraphs */
+}
+
+@media (max-width:767px){
+  .item{
+    width: 100%;
+  }
+}
